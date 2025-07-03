@@ -1,0 +1,22 @@
+// The code is in C
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int a=0;//make a global integer variable
+int perceptron(int n)
+    {
+          srand(time(NULL));
+        a = rand()%10; //random number between 0 to 10
+        if(n>a)
+           return a=n;
+    }
+int main() {
+    // Write C code here
+    int n=0;
+    printf("Enter a number:");
+    scanf("%d",&n);
+    printf("\noutput is %d.",perceptron(n));
+
+    return 0;
+}
