@@ -14,5 +14,14 @@ for X in range(len(nums)): #Printing the list using for loop
 
 print(nums) #Simply printing it
 
+s=0
+
+#now getting the total sum and average of the list(MODIFICATION)
+for X in range(len(nums)):
+    s+=nums[X]
+    X+=1 
+    
+print(f"Their sum is {s}") #Sum
+print(f"And their average is {s/len(nums)}") #Average
 
     
