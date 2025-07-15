@@ -1,0 +1,18 @@
+nums=[]
+i=0
+more='Y'  #defining the things
+
+while more=='Y': #Getting the list of numbers
+    nums.append(int(input(f"Number {i+1}:")))
+    i+=1 
+    more=input("Again (Y/N):")
+    
+X=0
+for X in range(len(nums)): #Printing the list using for loop
+    print(nums[X])
+    X+=1
+
+print(nums) #Simply printing it
+
+
+    
