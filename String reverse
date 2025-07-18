@@ -5,6 +5,10 @@ my_rev="" #decalring the string variable
 
 for i in range(len(my_string)): #loop the whole length
     my_rev+=my_string[-i-1] #stores in the string variable in reverse
-    i+=1 #increment
     
 print("Your string in reverse:\t"+my_rev)
+
+
+#### this can be done using slicing . syntax: sequence[start:end:steps]
+
+print("Your string in reverse:\t"+my_string[::-1])
