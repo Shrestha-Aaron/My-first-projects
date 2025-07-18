@@ -1,0 +1,22 @@
+#This code counts the no of vowels in a given string using function 
+
+def vowels_count(word): #function defination and declaration 
+    vcount=0
+    ccount=0
+    
+    for x in word.lower():
+        if x in "aeiou":
+            vcount+=1
+        elif x==" ":
+            y=0
+        else:
+            ccount+=1
+    return vcount,ccount 
+
+word=input('Enter a word:') # Taking the input
+
+vcount,ccount=vowels_count(word) #function called
+if vcount == 0:
+    print(f"There were {ccount} consonants and no vowels at all!")
+else:
+    print(f"There were {ccount} consonants and {vcount} vowels")
