@@ -1,0 +1,4 @@
+n=inf(input("Emter some numnber:"))
+
+for x in range(n):
+  print(f"There are {x} words for me to say")
