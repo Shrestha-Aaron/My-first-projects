@@ -1,0 +1,37 @@
+import random  # importing the random library
+
+print("Hey, i am the guesser.")
+
+a,b=map(int,input("Enter the range of numbers(first and last number like 1 10):").split())  # taking the range values from user
+print(f"\nI can guess your number.Think of a number between {a} and {b} in your head.")
+
+repeat=True
+again_repeat=True  # for repeating and stuff
+
+while repeat:
+    
+    g=random.randint(a,b)  # returns a random integer between a and b including a and b itself
+    guess=input(f"Is your number {g}(y/n)?") 
+    
+    if guess=="y" or guess=="n":
+        if guess=="y":
+            print("Yay, i guessed your number correctly.")
+            again=input("Wanna play again(y/n)?:")
+        elif guess=="n":
+            again=input("T-T, can i try again(y/n):")
+        else:
+            print("Couldn't understand.Please write y for yes and n for no.")  # wrong value check
+        
+        while again_repeat:
+            if again=="y":
+                repeat=True
+                again_repeat=False
+            elif again=="n":
+                repeat=False
+                again_repeat=False
+            else:
+                print("Wrong input. Try answering again as y for yes and n for no.")  # wrong value check
+                again_repeat=True
+                
+    else:
+        print("Please write y for yes and n for no.")  # wrong value check
