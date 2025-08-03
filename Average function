@@ -1,0 +1,9 @@
+def avg(): # function declaration and defination
+    n=int(input("Enter the number of terms:"))
+    s=0
+    for i in range(n):
+        s=s+int(input("Enter term["+str(i+1)+"]:"))
+    return s/n # value return 
+    
+a=avg()
+print(f"Their average is {a}")
